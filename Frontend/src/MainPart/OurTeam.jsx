@@ -268,9 +268,9 @@ function OurTeam() {
         <div className="flex justify-center items-center min-h-screen bg-gray-100">
           <div
             className="w-full max-w-2xl p-5"
-            style={{ height: "500px", width: "1500px", borderRadius: "10px",textAlign:"center" }}
+            style={{ height: "500px", width: "100%", borderRadius: "10px",textAlign:"center"}}
           >
-              <div className="AboutUs Pcordi">
+              <div className="OurTeam Pcordi">
               Program Coordinators
       </div>
             <Swiper>
@@ -294,12 +294,12 @@ function OurTeam() {
                   <h5 className="font-semibold text-gray-900 mt-0">
                     {testimonial.name}
                   </h5>
-                  <p
+                  {/* <p
                     className="text-gray-500 text-sm"
                     style={{ fontSize: "15px" }}
                   >
                     {testimonial.designation}
-                  </p>
+                  </p> */}
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -513,7 +513,7 @@ function OurTeam() {
           <div
             key={index}
             className="SCPhoto bg-gray-200 w-28 h-28 rounded-md flex flex-col items-center p-2"
-            style={{height:"300px"}}
+            
           >
             <center><div className="S1">
             <center><img
@@ -533,7 +533,7 @@ function OurTeam() {
       </div>
 
       {/* Pagination Controls */}
-      <nav
+      {/* <nav
         aria-label="Page navigation example"
         className="mt-4 flex justify-center"
         style={{ marginLeft: "170px" }}
@@ -558,7 +558,7 @@ function OurTeam() {
             </button>
           </li>
         </ul>
-      </nav>
+      </nav> */}
     </div>
 
       <div className="f1" style={{ marginTop: "130px", width: "100%" }}>

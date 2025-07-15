@@ -1034,208 +1034,6 @@
     border-radius: 20px;
 }
 
-
-.Coordinators{
-    /* border: 2px solid red; */
-    margin-top: 200px;
-    height: 1200px;
-    width: 80%;
-}
-
-.Sub{
-
-    /* border: 2px solid black; */
-    min-height: 400px;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.CPhoto{
-    /* border: 2px solid green; */
-    height: 250px;
-    width: 170px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 10px;
-    background-color: #ffffff;
-    box-shadow: 0 0 1px hsl(0, 1%, 19%);
-    margin-bottom: 40px;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.CPhoto:hover{
-    transform: scale(1.1); /* Scale up by 10% */
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-}
-.C1{
-    /* border: 2px solid red; */
-    height: 95%;
-    width: 95%;
-    border-radius: 10px;
-    
-}
-
-.C1 img{
-    height: 160px;
-    width: 150px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-.C2{
-    /* border: 2px solid red; */
-    height: 25%;
-    width: 95%;
-    border-radius: 10px;
-    font-size: 12px;
-    text-align: center;
-    
-}
-
-.C2 .p1{
-    font-size: 15px;
-    color: #0765a5;
-    font-weight: 700;
-    margin-top: -10px;
-}
-.C2 .p2{
-    font-size: 13px;
-    margin-top: -20px;
-    color: #5a5959;
-}
-.C2 .p3{
-    font-size: 13px;
-    margin-top: -20px;
-    color: #5a5959;
-}
-
-.StudentCoordinator{
-    /* border: 2px solid red; */
-    margin-top: -200px;
-    height: 440px;
-    width: 76%;
-    overflow: hidden;
-    margin-bottom: -100px;
-}
-.StudentCoordinator h6{
-    margin-left: 170px;
-}
-.SSub{
-    
-
-    
-    /* border: 2px solid red; */
-    margin-left: 160px;
-    margin-right: 140px;
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-
-
-    margin-bottom: -40px;
-    height: 350px;
-   
-   
-}
-
-
-.S1{
-    /* border: 2px solid red; */
-    height: 65%;
-    width: 95%;
-    border-radius: 10px;
-    
-}
-.S1 img{
-    height: 200px;
-    width: 150px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-.S2{
-    /* border: 2px solid red; */
-    height: 15%;
-    width: 95%;
-    border-radius: 10px;
-    font-size: 12px;
-    text-align: center;
-    
-}
-.S2 .p1{
-    font-size: 15px;
-    color: #0765a5;
-    font-weight: 700;
-    margin-top: 15px;
-}
-.S2 .p2{
-    font-size: 13px;
-    margin-top: -20px;
-    color: #5a5959;
-}
-.S2 .p3{
-    font-size: 13px;
-    margin-top: -20px;
-    color: #5a5959;
-}
-
-
-
-.SCPhoto{
-    /* border: 2px solid red; */
-    margin-top: 20px;
-    height: 370px;
-    min-width: 180px;
-    margin-left: 2px;
-    margin-right: 2px;
-    border-radius: 10px;
-    background-color: transparent;
-    box-shadow: 0 0 2px #323131;
-    margin-bottom: 40px;
-    display: inline-block;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    animation-name:slide ;
-    animation-direction: reverse;
-    animation: slide 20s infinite ease-in-out;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    animation: slide 2s linear infinite;
-
-}
-
-.SCPhoto:hover{
-    transform: scale(1.1);  /* Scale up by 10% */
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-
-} 
-@keyframes scroll {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); } /* Moves only half to ensure looping */
-}
-.SSub {
-    /* border: 2px solid red; */
-    display: flex;
-    gap: 2px;
-    white-space: nowrap;
-    overflow: hidden;
-    width: max-content; /* Ensures all items fit properly */
-    animation: scroll 20s linear infinite;
-    padding-right: 100%; /* Prevents blank space at the end */
-    
-}
-
-/* Pause scrolling when hovering */
-.SSub:hover {
-    animation-play-state: paused;
-    transform: scale(1.1); /* Scale up by 10% */
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-}
 .yearheading{
     height: 45px;
     margin-top: 20px;
@@ -1507,272 +1305,432 @@
 
  .Pcordi{
     
-    width: 500px;
+  
     /* margin-left: 37%; */
   
     height: 50px;
+
     border-radius: 10px;
     font-size: 20px;
     /* border: 2px solid red; */
  }
+
+
  
 
-/* Responsive Styles for OurTeam, Coordinators, StudentCoordinator, SSub, SCPhoto */
-@media screen and (max-width: 1024px) {
-  .OurTeam {
-    font-size: 20px;
-    height: 48px;
-  }
-  .Coordinators {
-    width: 95%;
-    height: auto;
-    margin-top: 100px;
-  }
-  .StudentCoordinator {
-    width: 95%;
-    height: auto;
-    margin-top: -100px;
-    margin-bottom: -50px;
-  }
-  .SSub {
-    margin-left: 0;
-    margin-right: 0;
+.Coordinators{
+    /* border: 2px solid red; */
+    margin-top: 200px;
+    height: 1200px;
+    width: 80%;
+}
+
+.Sub{
+
+    /* border: 2px solid black; */
+    min-height: 400px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.CPhoto{
+    /* border: 2px solid green; */
     height: 250px;
-  }
-  .SCPhoto {
-    height: 220px;
-    min-width: 120px;
-  }
+    width: 170px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 1px hsl(0, 1%, 19%);
+    margin-bottom: 40px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-@media screen and (max-width: 768px) {
-  .OurTeam {
-    font-size: 16px;
-    height: 40px;
-  }
-  .Coordinators {
-    width: 100%;
-    height: auto;
-    margin-top: 60px;
-  }
-  .StudentCoordinator {
-    width: 100%;
-    height: auto;
-    margin-top: -60px;
-    margin-bottom: -30px;
-  }
-  .SSub {
-    margin-left: 0;
-    margin-right: 0;
-    height: 180px;
-    gap: 4px;
-  }
-  .SCPhoto {
-    height: 140px;
-    min-width: 90px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .OurTeam {
-    font-size: 13px;
-    height: 30px;
-    padding: 4px 0;
-  }
-  .Coordinators {
-    width: 100%;
-    height: auto;
-    margin-top: 30px;
-  }
-  .StudentCoordinator {
-    width: 100%;
-    height: auto;
-    margin-top: -30px;
-    margin-bottom: -10px;
-  }
-  .SSub {
-    margin-left: 0;
-    margin-right: 0;
-    height: 120px;
-    gap: 2px;
-  }
-  .SCPhoto {
-    height: 90px;
-    min-width: 60px;
-  }
-} 
 
-/* Enhanced Responsive Styles for OurTeam, Coordinators, StudentCoordinator, SSub, SCPhoto */
-@media screen and (max-width: 900px) {
-  .OurTeam {
-    font-size: 18px;
-    height: 38px;
-    padding: 6px 0;
-  }
-  .Coordinators, .StudentCoordinator {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0 10px;
-  }
-  .SSub {
+.CPhoto:hover{
+    transform: scale(1.1); /* Scale up by 10% */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+.C1{
+    /* border: 2px solid red; */
+    height: 95%;
+    width: 95%;
+    border-radius: 10px;
+    
+}
+
+.C1 img{
     height: 160px;
-    gap: 6px;
-  }
-  .SCPhoto {
-    height: 120px;
-    min-width: 80px;
-  }
+    width: 150px;
+    border-radius: 10px;
+    overflow: hidden;
 }
-@media screen and (max-width: 768px) {
-  .OurTeam {
-    font-size: 15px;
-    height: 32px;
-    padding: 5px 0;
-  }
-  .Coordinators, .StudentCoordinator {
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 0;
-    padding: 0 5px;
-  }
-  .SSub {
-    height: 110px;
-    gap: 4px;
-    padding: 0 2px;
-  }
-  .SCPhoto {
-    height: 90px;
-    min-width: 60px;
-    padding: 2px;
-  }
-  .SCPhoto img, .S1 img {
-    height: 60px !important;
-    width: 60px !important;
-    border-radius: 8px;
-  }
-  .S2 .p1, .S2 .p2, .S2 .p3 {
-    font-size: 10px !important;
-  }
-}
-@media screen and (max-width: 600px) {
-  .SCPhoto {
-    background: #fff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    border-radius: 12px;
-    padding: 10px 6px 8px 6px !important;
-    margin: 8px 4px 8px 4px !important;
-    min-width: 120px;
-    max-width: 80vw;
-    height: auto !important;
-    display: flex !important;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .S1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 6px;
-  }
-  .SCPhoto img, .S1 img {
-    height: 56px !important;
-    width: 56px !important;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #eee;
-    background: #fafafa;
-    margin-bottom: 4px;
-  }
-  .S2 {
-    width: 100%;
+.C2{
+    /* border: 2px solid red; */
+    height: 25%;
+    width: 95%;
+    border-radius: 10px;
+    font-size: 12px;
     text-align: center;
-    padding: 0;
-  }
-  .S2 .p1 {
-    font-size: 14px !important;
-    font-weight: 700;
-    color: #0765a5;
-    margin: 0 0 2px 0;
-    line-height: 1.1;
-    word-break: break-word;
-  }
-  .S2 .p2 {
-    font-size: 12px !important;
-    color: #5a5959;
-    margin: 0;
-    line-height: 1.1;
-    word-break: break-word;
-  }
-  .S2 .p3 {
-    font-size: 11px !important;
-    color: #5a5959;
-    margin: 0;
-    line-height: 1.1;
-    word-break: break-word;
-  }
-} 
+    
+}
 
-@media screen and (min-width: 600px) and (max-width: 1024px) {
-  .SCPhoto {
-    min-width: 180px;
-    max-width: 220px;
-    height: 260px !important;
-    background: #fff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-    border-radius: 16px;
-    padding: 18px 10px 12px 10px !important;
-    margin: 12px 8px 12px 8px !important;
-    display: flex !important;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .S1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  .SCPhoto img, .S1 img {
-    height: 100px !important;
-    width: 100px !important;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #eee;
-    background: #fafafa;
-    margin-bottom: 8px;
-  }
-  .S2 {
-    width: 100%;
-    text-align: center;
-    padding: 0;
-  }
-  .S2 .p1 {
-    font-size: 20px !important;
-    font-weight: 700;
+.C2 .p1{
+    font-size: 15px;
     color: #0765a5;
-    margin: 0 0 4px 0;
-    line-height: 1.2;
-    word-break: break-word;
-  }
-  .S2 .p2 {
-    font-size: 16px !important;
+    font-weight: 700;
+    margin-top: -10px;
+}
+.C2 .p2{
+    font-size: 13px;
+    margin-top: -20px;
     color: #5a5959;
-    margin: 0;
-    line-height: 1.1;
-    word-break: break-word;
-  }
-  .S2 .p3 {
-    font-size: 15px !important;
+}
+.C2 .p3{
+    font-size: 13px;
+    margin-top: -20px;
     color: #5a5959;
-    margin: 0;
-    line-height: 1.1;
-    word-break: break-word;
-  }
-  .SSub {
-    gap: 12px !important;
-    padding: 0 10px !important;
-  }
+}
+
+.StudentCoordinator{
+    /* border: 2px solid red; */
+    margin-top: -200px;
+    height: 440px;
+    width: 76%;
+    overflow: hidden;
+    margin-bottom: -100px;
+}
+.StudentCoordinator h6{
+    margin-left: 170px;
+}
+.SSub{
+    
+
+    
+    /* border: 2px solid red; */
+    margin-left: 160px;
+    margin-right: 140px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+
+
+    margin-bottom: -40px;
+    height: 350px;
+   
+   
+}
+
+
+.S1{
+    /* border: 2px solid red; */
+    height: 65%;
+    width: 95%;
+    border-radius: 10px;
+    
+}
+.S1 img{
+    height: 200px;
+    
+    width: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.S2{
+    /* border: 2px solid red; */
+    height: 15%;
+    width: 95%;
+    border-radius: 10px;
+    font-size: 12px;
+    text-align: center;
+    
+}
+.S2 .p1{
+    font-size: 15px;
+    color: #0765a5;
+    font-weight: 700;
+    margin-top: 15px;
+}
+.S2 .p2{
+    font-size: 13px;
+    margin-top: -20px;
+    color: #5a5959;
+}
+.S2 .p3{
+    font-size: 13px;
+    margin-top: -20px;
+    color: #5a5959;
+}
+
+
+
+.SCPhoto{
+    /* border: 2px solid red; */
+    margin-top: 20px;
+    height: 300px;
+    min-width: 180px;
+    margin-left: 2px;
+    margin-right: 2px;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0 0 2px #323131;
+    margin-bottom: 40px;
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation-name:slide ;
+    animation-direction: reverse;
+    animation: slide 20s infinite ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: slide 2s linear infinite;
+
+}
+
+.SCPhoto:hover{
+    transform: scale(1.1);  /* Scale up by 10% */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+
 } 
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); } /* Moves only half to ensure looping */
+}
+.SSub {
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: max-content; /* Ensures all items fit properly */
+    animation: scroll 20s linear infinite;
+    padding-right: 100%; /* Prevents blank space at the end */
+    
+}
+
+/* Pause scrolling when hovering */
+.SSub:hover {
+    animation-play-state: paused;
+    transform: scale(1.1); /* Scale up by 10% */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+ 
+
+/* Responsive adjustments */
+@media (max-width: 1567px) {
+
+    
+    .OurTeam{
+        width: 100%;
+        border: 2px solid red;
+    }
+  .Coordinators {
+    width: 95%;
+    margin-top: 150px;
+    height: auto;
+  }
+
+  .Sub {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    justify-content: center;
+    /* border: 2px solid red; */
+  }
+
+  .CPhoto {
+    width: 160px;
+    height: 230px;
+    margin: 10px;
+  }
+
+  .C1 img {
+    width: 140px;
+   height: 160px;
+  }
+
+  .C2 {
+    margin-top: 1px;
+    height: auto;
+    font-size: 11px;
+    /* border: 2px solid red; */
+  }
+
+  .C2 .p1 {
+    font-size: 12px;
+  }
+
+  .C2 .p2, .C2 .p3 {
+    font-size: 10px;
+  }
+
+  .StudentCoordinator {
+    width: 95%;
+    height: auto;
+    margin-top: 0px;
+    /* border: 2px solid red; */
+    margin-bottom: 0;
+  }
+
+  .StudentCoordinator h6 {
+    margin-left: 40px;
+  }
+
+  .SSub {
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    animation: none; /* disable scroll on mid screens */
+    padding-right: 0;
+  }
+
+  .SCPhoto {
+    min-width: 160px;
+    height: 240px;
+    margin: 10px;
+    /* border: 2px solid red; */
+    animation: none;
+  }
+
+  .S1 img {
+    width: 130px;
+    height: 170px;
+  }
+
+  .S2 {
+  
+    font-size: 11px;
+  }
+
+  .S2 .p1 {
+    font-size: 12px;
+  }
+
+  .S2 .p2, .S2 .p3 {
+    font-size: 10px;
+  }
+}
+
+/* For tablets and smaller */
+@media (max-width: 1024px) {
+  .Sub, .SSub {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .CPhoto{
+    width: 140px;
+    margin: 10px;
+    height: 230px;
+  }
+
+  
+    .SCPhoto {
+    width: 140px;
+    height: 250px;
+ 
+    margin: 10px;
+  }
+
+   .C1 img{
+    /* border: 2px solid red; */
+    height: 150px;
+    width: 125px;
+    
+  }
+
+  .S1 img{
+/* 
+    border: 2px solid red; */
+    height: 180px;
+    width: 130px;
+  }
+}
+
+@media (max-width: 778px) {
+    .Pcordi{
+        margin-top: 100px;
+    }
+  .Sub, .SSub {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .CPhoto{
+    width: 140px;
+    height: 210px;
+ 
+    margin: 10px;
+  }
+
+    .SCPhoto {
+    width: 140px;
+    height: 250px;
+ 
+    margin: 10px;
+  }
+
+  .C1 img{
+    /* border: 2px solid red; */
+    height: 150px;
+    
+  }
+  .C2{
+    margin-top: 15px;
+  }
+
+  .S1 img{
+/* 
+    border: 2px solid red; */
+    height: 180px;
+    width: 130px;
+  }
+
+
+  .S2 .p2{
+    
+  
+  }
+
+ 
+
+
+  
+}
+
+/* For mobile */
+@media (max-width: 600px) {
+  .StudentCoordinator h6 {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  .CPhoto, .SCPhoto {
+    width: 130px;
+    margin: 5px;
+  }
+
+  .C1 img, .S1 img {
+    width: 110px;
+  }
+
+  .C2 .p1, .S2 .p1 {
+    font-size: 12px;
+  }
+
+  .C2 .p2, .C2 .p3, .S2 .p2, .S2 .p3 {
+    font-size: 10px;
+  }
+}
