@@ -328,3 +328,35 @@
 .team-card:nth-child(4) { animation-delay: 0.4s; }
 .team-card:nth-child(5) { animation-delay: 0.5s; }
 .team-card:nth-child(6) { animation-delay: 0.6s; }
+
+.id-icon {
+  cursor: pointer;
+  position: relative;
+}
+
+.id-popup {
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  color: #333;
+  padding: 6px 14px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  font-size: 0.95rem;
+  white-space: nowrap;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.id-popup::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
