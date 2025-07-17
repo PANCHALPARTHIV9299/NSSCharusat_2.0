@@ -1,15 +1,21 @@
 import React, { useState } from 'react';
 import './OurTeam.css';
-
+import NevilImg from '../assets/Nevil.jpg';
+import Parthivimg from '../assets/ParthivPanchal.jpg';
+import Shubhimg from '../assets/shubh.jpg';
+import Dwijeshimg from '../assets/Dwijesh.jpg';
+import FenilImg from '../assets/Fenil.jpg';
+import AyushiImg from '../assets/Ayushi.jpg';
+import Kashyapimg from '../assets/Kashyapsir.jpg'
+import DhurvImg from '../assets/DhruvRupapra.jpg';
 const OurTeam = () => {
   const [openIdPopup, setOpenIdPopup] = useState(null);
   const teamMembers = [
     {
       id: 1,
-      name: "Nevil Dhinoja",
-      role: "Project Manager",
-      
-      image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
+      name: "Prof. Kashyap Patel ",
+      role: "Project Guide",
+      image: Kashyapimg,
       social: {
         Linkdln: "https://www.linkedin.com/in/nevil-dhinoja",
         Email: "d24ce147@charusat.edu.in",
@@ -19,9 +25,21 @@ const OurTeam = () => {
     },
     {
       id: 2,
+      name: "Nevil Dhinoja",
+      role: "Project Manager",
+      image: NevilImg,
+      social: {
+        Linkdln: "https://www.linkedin.com/in/nevil-dhinoja",
+        Email: "d24ce147@charusat.edu.in",
+        github: "https://github.com/Nevil-Dhinoja",
+        ID:"D24DCE147"
+      }
+    },
+    {
+      id: 3,
       name: "Partiv Panchal",
       role: "Frontend Developer",
-      image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
+      image: Parthivimg,
       social: {
         Linkdln: " https://www.linkedin.com/in/parthiv-panchal-a66101321",
         Email: "d24dce138@charusat.edu.in",
@@ -30,23 +48,10 @@ const OurTeam = () => {
       }
     },
     {
-      id: 3,
-      name: "Ayushi Kotadiya",
-      role: "Frontend Developer",
-      
-      image: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
-      social: {
-        Linkdln: "https://www.linkedin.com/in/ayushi-kotadiya",
-        Email: "23dit026@charusat.edu.in",
-        github: "https://github.com/kotadiyaayushi",
-        ID:"23DIT026"
-      }
-    },
-    {
       id: 4,
       name: "Shubh Patel",
       role: "Backend Developer",
-      image: "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
+      image: Shubhimg,
       social: {
         Linkdln: "https://www.linkedin.com/in/shubh-patel-834a6329b/",
         Email: "d24dce137@charusat.edu.in",
@@ -57,10 +62,22 @@ const OurTeam = () => {
     },
     {
       id: 5,
-      name: "Dwijesh ",
-      role: "]UI/UX Designer",
+      name: "Ayushi Kotadiya",
+      role: "Frontend Developer",
       
-      image: "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
+      image: AyushiImg,
+      social: {
+        Linkdln: "https://www.linkedin.com/in/ayushi-kotadiya",
+        Email: "23dit026@charusat.edu.in",
+        github: "https://github.com/kotadiyaayushi",
+        ID:"23DIT026"
+      }
+    },
+    {
+      id: 6,
+      name: "Dwijesh ",
+      role: "UI/UX Designer",
+      image: Dwijeshimg,
       social: {
         Linkdln: "https://www.linkedin.com/in/dwijesh-trivedi-a88622239?",
         Email: "d24dce135@charusat.edu.in",
@@ -70,15 +87,27 @@ const OurTeam = () => {
       }
     },
     {
-      id: 6,
+      id: 7,
       name: "Fenil",
-      role: "Lead Developer",
-      image: "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
+      role: "Route handling",
+      image: FenilImg,
       social: {
         Linkdln: "https://www.linkedin.com/in/thumbar-fenil-b6899a250?trk=contact-info",
         Email: "d24dce149@charusat.edu.in",
         github: "https://github.com/fenil14156",
         Id:"D24DCE149"
+      }
+    },
+    {
+      id: 8,
+      name: "Dhruv Rupapra",
+      role: "Project Initiator",
+      image: DhurvImg,
+      social: {
+        Linkdln: "https://www.linkedin.com/in/dhruv-rupapara",
+        Email: "d24ce147@charusat.edu.in",
+        // github: "https://github.com/Nevil-Dhinoja",
+        ID:"D24DCE147"
       }
     }
   ];
@@ -86,9 +115,9 @@ const OurTeam = () => {
   return (
     <div className="our-team-container">
       <div className="team-header">
-        <h1 className="team-title">Our Executive Team</h1>
+        <h1 className="team-title">Dedicated Developers</h1>
         <p className="team-description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo 
+          The best websites are not just built — they’re crafted with purpose, precision, and passion.
         </p>
       </div>
 
