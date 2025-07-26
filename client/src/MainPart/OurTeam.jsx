@@ -52,49 +52,49 @@ const testimonials = [
 
 const coordinators = [
   {
-    name: "Mr. Dhruv Pupapara",
+    name: "Mr.Dhruv Pupapara",
     role: "CSPIT-EC",
     image: im1,
     email: "23ec113@charusat.edu.in"
   },
   {
-    name: "Ms. Diya Thakkar",
+    name: "Ms.Diya Thakkar",
     role: "CSPIT-EC",
     image: im2,
     email: "23ec137@charusat.edu.in "
   },
   {
-    name: "Ms. Aarti Jain",
+    name: "Ms.Aarti Jain",
     role: "CSPIT-CE",
     image: im3,
     email: "23ce045@charusat.edu.in"
   },
   {
-    name: "Mr. Jash Bhungaliya",
+    name: "Mr.Jash Bhungaliya",
     role: "CSPIT-ME",
     image: im4,
     email: "23ME004@charusat.edu.in"
   },
   {
-    name: "Mr. Heet Vithalani",
+    name: "Mr.Heet Vithalani",
     role: "DEPSTAR-CE",
     image: im5,
     email: "d24dce144@charusat.edu.in"
   },
   {
-    name: "Ms. Chesta Ginoya",
+    name: "Ms.Chesta Ginoya",
     role: "DEPSTAR-CE",
     image: im6,
     email: "23DCE034@charusat.edu.in"
   },
   {
-    name: "Mr. Utsav Lodaliya",
+    name: "Mr.Utsav Lodaliya",
     role: "CMPICA",
     image: im7,
     email: "23bsit036@charusat.edu.in"
   },
   {
-    name: "Mr. Parv Chittora",
+    name: "Mr.Parv Chittora",
     role: "PDPIAS",
     image: im8,
     email: "23bsc058@charusat.edu.in"
@@ -104,125 +104,125 @@ const coordinators = [
 // Program Officers data with emails
 const programOfficers = [
    {
-    name: "Dr. Shreya Swami",
+    name: "Dr.Shreya Swami",
     role: "ARIP",
     image: i7,
     email: "shreyaswami.phy@charusat.ac.in"
   },
   // 2. BDIPS (CIPS)
   {
-    name: "Dr. Parth Thakor",
+    name: "Dr.Parth Thakor",
     role: "BDIPS",
     image: i15,
     email: "parththakor.cips@charusat.ac.in"
   },
   // 3. CMPICA
   {
-    name: "Dr. Hardik Pandit",
+    name: "Dr.Hardik Pandit",
     role: "CMPICA",
     image: i3,
     email: "hardikpandit.mca@charusat.ac.in"
   },
   // 4. CSPIT-AIML
   {
-    name: "Prof. Gauravkumar",
+    name: "Prof.Gauravkumar",
     role: "CSPIT-AIML",
     image: i9,
     email: "Gauravkumar.aiml@charusat.ac.in"
   },
   // 5. CSPIT-CE
   {
-    name: "Prof. Martin Parmar",
+    name: "Prof.Martin Parmar",
     role: "CSPIT-CE",
     image: i2,
     email: "martinparmar.ce@charusat.ac.in"
   },
   // 6. CSPIT-CL
   {
-    name: "Prof. Megha Desai",
+    name: "Prof.Megha Desai",
     role: "CSPIT-CL",
     image: i14,
     email: "meghadesai.cv@charusat.ac.in"
   },
   // 7. CSPIT-CSE
   {
-    name: "Prof. Pinal Hansora",
+    name: "Prof.Pinal Hansora",
     role: "CSPIT-CSE",
     image: i16,
     email: "Pinalhansora.cse@charusat.ac.in"
   },
   // 8. CSPIT-EC
   {
-    name: "Dr. Sagarkumar Patel",
+    name: "Dr.Sagarkumar Patel",
     role: "CSPIT-EC",
     image: i6,
     email: "sagarpatel.ec@charusat.ac.in"
   },
   // 9. CSPIT-EE
   {
-    name: "Prof. Ankur Patel",
+    name: "Prof.Ankur Patel",
     role: "CSPIT-EE",
     image: i1,
     email: "ankurpatel.ee@charusat.ac.in"
   },
   // 10. CSPIT-IT
   {
-    name: "Prof. Rajnik Katriya",
+    name: "Prof.Rajnik Katriya",
     role: "CSPIT-IT",
     image: i17,
     email: "rajnikkatriya.it@charusat.ac.in"
   },
   // 11. CSPIT-ME
   {
-    name: "Prof. Satayu Travadi",
+    name: "Prof.Satayu Travadi",
     role: "CSPIT-ME",
     image: i18,
     email: "satayutravadi.me@charusat.ac.in"
   },
   // 12. DEPSTAR-CE
   {
-    name: "Prof. Kashyap Patel",
+    name: "Prof.Kashyap Patel",
     role: "DEPSTAR-CE",
     image: i13,
     email: "kashyappatel.dce@charusat.ac.in"
   },
   // 13. DEPSTAR-CSE
   {
-    name: "Prof. Gaurang Patel",
+    name: "Prof.Gaurang Patel",
     role: "DEPSTAR-CSE",
     image: i8,
     email: "gaurangpatel.dcs@charusat.ac.in"
   },
   // 14. DEPSTAR-IT
   {
-    name: "Prof. Hitesh Makwana",
+    name: "Prof.Hitesh Makwana",
     role: "DEPSTAR-IT",
     image: i12,
     email: "hiteshmakwana.dit@charusat.ac.in"
   },
   // 15. IIIM
   {
-    name: "Dr. Poonam Amrutia",
+    name: "Dr.Poonam Amrutia",
     role: "IIIM",
     image: i4,
     email: "poonamamrutia.mba@charusat.ac.in"
   },
   {
-    name: "Prof. Hetal Shah",
+    name: "Prof.Hetal Shah",
     role: "IIIM",
     image: i11,
     email: "hetalshah.nur@charusat.ac.in"
   },
   // 17. PDPIAS
   {
-    name: "Dr. Rajesh Savalia",
+    name: "Dr.Rajesh Savalia",
     role: "PDPIAS",
     image: i5,
     email: "rajeshsavalia.maths@charusat.ac.in"
   },
   // 18. RPCP
   {
-    name: "Prof. Hardik Koria",
+    name: "Prof.Hardik Koria",
     role: "RPCP",
     image: i10,
     email: "hardikkoria.ph@charusat.ac.in"

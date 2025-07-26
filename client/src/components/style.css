@@ -1187,6 +1187,7 @@
 }
 
 .CPhoto{
+    /* border: 2px solid red; */
     height: 310px;
     width: 220px;
     margin-left: 10px;
@@ -1208,9 +1209,11 @@
 }
 
 .C1{
-    height: 60%;
+    height: 80%;
     width: 95%;
     border-radius: 10px;
+    /* border: 2px solid red; */
+
 }
 
 .C1 img{
@@ -1222,7 +1225,7 @@
 }
 
 .C2{
-    margin-top: 2rem;
+    margin-top: 5rem;
     height: 55%;
     width: 95%;
     border-radius: 10px;
