@@ -17,10 +17,10 @@ const OurTeam = () => {
       role: "Project Guide",
       image: Kashyapimg,
       social: {
-        Linkdln: "https://www.linkedin.com/in/nevil-dhinoja",
+        Linkdln:"https://www.linkedin.com/in/kashyap-patel-73706aa1/",
         Email: "d24ce147@charusat.edu.in",
-        github: "https://github.com/Nevil-Dhinoja",
-        ID:"D24DCE147"
+        // github: "https://github.com/Nevil-Dhinoja",
+        // ID:"D24DCE147"
       }
     },
     {
@@ -101,13 +101,13 @@ const OurTeam = () => {
     {
       id: 8,
       name: "Dhruv Rupapra",
-      role: "Project Initiator",
+      role: "Project ",
       image: DhurvImg,
       social: {
         Linkdln: "https://www.linkedin.com/in/dhruv-rupapara",
-        Email: "d24ce147@charusat.edu.in",
+        Email: "23EC113@charusat.edu.in",
         // github: "https://github.com/Nevil-Dhinoja",
-        ID:"D24DCE147"
+        ID:"23EC113"
       }
     }
   ];
