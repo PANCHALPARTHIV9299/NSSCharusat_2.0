@@ -1,863 +1,837 @@
-/* Mission Page Styling */
-.mission-Page {
-  font-family: Arial, sans-serif;
-  position: relative;
-  margin-top: 0;
-  padding-top: 2rem;
+/* Mission Page Base Styles */
+.mission-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+  padding: clamp(1rem, 3vw, 2rem) 0;
   box-sizing: border-box;
   width: 100%;
   overflow-x: hidden;
 }
 
-.MessageDesk {
-  background-color: #004b91;
-  color: white;
-  font-size: clamp(1.2rem, 3vw, 1.5rem);
-  font-weight: bold;
-  padding: clamp(0.8rem, 2vw, 1rem);
-  border-radius: 0.5rem;
-  width: min(90%, 1200px);
-  margin: 0 auto -3rem auto;
+/* Common container styles */
+.mission-container,
+.vision-container,
+.duties-container {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  margin: clamp(1.5rem, 4vw, 3rem) auto;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  border-radius: clamp(0.8rem, 2vw, 1.2rem);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 75, 145, 0.1);
+  width: min(95%, 1200px);
   text-align: center;
-  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
 }
 
-/* Mission and Vision Containers */
-.Mission-Container,
-.Vission-Container {
-  background-color: #f2f2f2;
-  padding: clamp(1rem, 3vw, 2rem);
-  border-radius: 0.6rem;
-  text-align: center;
-  margin: 2rem auto;
-  width: min(90%, 1200px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
+.mission-container::before,
+.vision-container::before,
+.duties-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #004b91, #0066cc, #004b91);
+  border-radius: clamp(0.8rem, 2vw, 1.2rem) clamp(0.8rem, 2vw, 1.2rem) 0 0;
 }
 
-.Titel h2 {
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
-  font-weight: bold;
+/* Section titles */
+.section-title h2,
+.section-title h3 {
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  font-weight: 700;
   color: #004b91;
-  text-align: center;
-  margin-bottom: 1rem;
-  line-height: 1.2;
-}
-
-.Missio-writeup p,
-.Vission-writeup p {
-  font-size: clamp(1rem, 2.5vw, 1.6rem);
-  color: #333;
-  line-height: 1.6;
-  margin: 0;
-}
-
-/* Messages Sections */
-.msg-con {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  width: min(90%, 1200px);
-  margin: 2rem auto;
-  box-sizing: border-box;
-}
-
-.msg-P-desk,
-.Msg-R-desk,
-.Msg-PC-desk {
-  background-color: #f2f2f2;
-  padding: clamp(1rem, 3vw, 1.5rem);
-  border-radius: 0.6rem;
-  width: 100%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
+  margin-bottom: clamp(1rem, 3vw, 1.5rem);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   position: relative;
 }
 
-.Msg {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
+.section-title h3 {
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  text-transform: none;
+  letter-spacing: 0.02em;
 }
 
-.MsgPera {
-  font-size: clamp(0.9rem, 2vw, 1rem);
+.section-title h2::after,
+.section-title h3::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(50px, 15vw, 80px);
+  height: 3px;
+  background: linear-gradient(90deg, #004b91, #0066cc);
+  border-radius: 2px;
+}
+
+/* Content paragraphs */
+.mission-content p,
+.vision-content p {
+  font-size: clamp(1.1rem, 3vw, 1.4rem);
+  line-height: 1.8;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto;
   text-align: justify;
-  line-height: 1.6;
-  margin: 0;
-  width: 100%;
-  color: #333;
+  font-weight: 400;
 }
 
-.IName {
+/* Message from desk header */
+.message-desk {
+  background: linear-gradient(135deg, #004b91 0%, #0066cc 100%);
+  color: white;
+  text-align: center;
+  margin: clamp(2rem, 5vw, 4rem) auto clamp(1rem, 3vw, 2rem);
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border-radius: clamp(0.8rem, 2vw, 1rem);
+  box-shadow: 0 6px 20px rgba(0, 75, 145, 0.3);
+  width: min(95%, 1200px);
+  position: relative;
+  overflow: hidden;
+}
+
+.message-desk::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, 
+    transparent 30%, 
+    rgba(255, 255, 255, 0.1) 50%, 
+    transparent 70%);
+  transform: rotate(45deg);
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+  100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+}
+
+.message-desk h2 {
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  font-weight: 600;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+/* Messages container */
+.messages-container {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.5rem, 4vw, 2.5rem);
+  width: min(95%, 1200px);
+  margin: 0 auto;
+  padding: 0 clamp(0.5rem, 2vw, 1rem);
+}
+
+/* Individual message cards */
+.message-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: clamp(0.8rem, 2vw, 1.2rem);
+  padding: clamp(1.5rem, 4vw, 2rem);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 75, 145, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.message-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.message-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #004b91, #0066cc, #004b91);
+  border-radius: clamp(0.8rem, 2vw, 1.2rem) clamp(0.8rem, 2vw, 1.2rem) 0 0;
+}
+
+/* Message content layout */
+.message-content {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 3vw, 1.5rem);
+  align-items: center;
+}
+
+.message-text {
+  flex: 1;
+  width: 100%;
+}
+
+.message-text p {
+  font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+  line-height: 1.7;
+  color: #555;
+  text-align: justify;
+  margin: 0;
+}
+
+/* Profile section */
+.message-profile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
-}
-
-.Name {
-  font-size: clamp(1rem, 2.2vw, 1.2rem);
-  font-weight: bold;
-  margin: 0;
+  gap: clamp(0.8rem, 2vw, 1rem);
   text-align: center;
-  color: #004b91;
 }
 
-/* Images inside message sections */
-.Provost,
-.RD,
-.PCD {
-  width: clamp(80px, 15vw, 120px);
-  height: clamp(100px, 18vw, 140px);
-  border-radius: 0.6rem;
+.profile-image {
+  width: clamp(100px, 20vw, 140px);
+  height: clamp(120px, 24vw, 160px);
+  border-radius: clamp(0.8rem, 2vw, 1rem);
   object-fit: cover;
-  border: 2px solid #004b91;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border: 3px solid #004b91;
+  box-shadow: 0 6px 20px rgba(0, 75, 145, 0.2);
+  transition: transform 0.3s ease;
 }
 
-.DContainer {
-  background-color: #f2f2f2;
-  padding: clamp(1rem, 3vw, 2rem);
-  border-radius: 0.6rem;
-  text-align: center;
-  margin: 2rem auto 4rem auto;
-  width: min(90%, 1200px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
+.profile-image:hover {
+  transform: scale(1.05);
 }
 
-.DTitle {
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
-  font-weight: bold;
+.profile-name {
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  font-weight: 600;
   color: #004b91;
-  text-align: center;
-  margin-bottom: 1rem;
-  line-height: 1.2;
-}
-
-.DutyDescription p {
-  font-size: clamp(1rem, 2.5vw, 1.6rem);
-  text-align: left;
-  line-height: 1.7;
-  color: #333;
   margin: 0;
-}
-
-.footer-container {
-  background-color: white;
-  padding: clamp(1rem, 2vw, 1.5rem);
-  border-radius: 0.6rem;
-  display: flex;
   text-align: center;
-  width: min(90%, 1200px);
-  margin: 2rem auto;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
 }
 
-.contact-info,
-.quick-links {
-  text-align: start;
-  color: #007bff;
-  width: 50%;
-  padding: 0 1rem;
-  box-sizing: border-box;
-}
-
-.info-item {
-  display: flex;
-  align-items: start;
-  margin: 0.8rem 0;
-  gap: 0.5rem;
-}
-
-.icon {
-  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
-  color: #007bff;
-  flex-shrink: 0;
-  margin-top: 0.2rem;
-}
-
-.social-icons {
-  display: flex;
-  gap: 0.8rem;
-  margin-top: 1rem;
-  flex-wrap: wrap;
-}
-
-.social-icon {
-  font-size: clamp(1.2rem, 2.2vw, 1.4rem);
-  color: #007bff;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.social-icon:hover {
-  transform: scale(1.1);
-}
-
-.quick-links ul {
+/* Duties section */
+.duties-content ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.quick-links li {
-  margin: 0.8rem 0;
+.duties-content li {
+  font-size: clamp(1rem, 2.8vw, 1.2rem);
+  line-height: 1.8;
+  color: #444;
+  margin: clamp(0.8rem, 2vw, 1.2rem) 0;
+  padding-left: clamp(1.5rem, 3vw, 2rem);
+  position: relative;
 }
 
-.quick-links a {
-  text-decoration: none;
-  color: #007bff;
+.duties-content li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #004b91;
+  font-size: 1.2em;
   font-weight: bold;
-  font-size: clamp(0.9rem, 2vw, 1rem);
-  transition: color 0.2s ease;
-}
-
-.quick-links a:hover {
-  color: #0056b3;
 }
 
 /* Responsive breakpoints */
-/* Large screens (1200px and up) */
-@media (min-width: 1200px) {
-  .msg-con {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-    max-width: 1200px;
+/* 4K and ultra-wide screens (2560px+) */
+@media (min-width: 2560px) {
+  .mission-page {
+    padding: 3rem 0;
   }
   
-  .Msg {
+  .mission-container,
+  .vision-container,
+  .duties-container {
+    max-width: 1400px;
+    padding: 3rem;
+  }
+  
+  .messages-container {
+    max-width: 1400px;
+  }
+  
+  .message-card {
+    padding: 3rem;
+  }
+  
+  .message-content {
     flex-direction: row;
-    text-align: left;
-    gap: 2rem;
+    align-items: flex-start;
+    gap: 3rem;
   }
   
-  .MsgPera {
-    flex: 1;
-    text-align: justify;
+  .message-text {
+    flex: 2;
   }
   
-  .IName {
-    flex-shrink: 0;
-    align-items: center;
+  .message-profile {
+    flex: 0 0 200px;
+  }
+  
+  .profile-image {
+    width: 160px;
+    height: 180px;
   }
 }
 
-/* Medium-large screens (992px to 1199px) */
-@media (max-width: 1199px) and (min-width: 992px) {
-  .msg-con {
-    width: 95%;
+/* Large desktop screens (1920px to 2559px) */
+@media (max-width: 2559px) and (min-width: 1920px) {
+  .mission-page {
+    padding: 2.5rem 0;
+  }
+  
+  .message-content {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2.5rem;
+  }
+  
+  .message-text {
+    flex: 2;
+  }
+  
+  .message-profile {
+    flex: 0 0 180px;
+  }
+  
+  .profile-image {
+    width: 140px;
+    height: 160px;
+  }
+}
+
+/* Standard desktop screens (1440px to 1919px) */
+@media (max-width: 1919px) and (min-width: 1440px) {
+  .mission-page {
+    padding: 2rem 0;
+  }
+  
+  .message-content {
+    flex-direction: row;
+    align-items: flex-start;
     gap: 2rem;
   }
   
-  .Msg {
+  .message-text {
+    flex: 2;
+  }
+  
+  .message-profile {
+    flex: 0 0 160px;
+  }
+  
+  .profile-image {
+    width: 130px;
+    height: 150px;
+  }
+}
+
+/* Medium desktop screens (1200px to 1439px) */
+@media (max-width: 1439px) and (min-width: 1200px) {
+  .message-content {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.8rem;
+  }
+  
+  .message-text {
+    flex: 2;
+  }
+  
+  .message-profile {
+    flex: 0 0 140px;
+  }
+  
+  .profile-image {
+    width: 120px;
+    height: 140px;
+  }
+}
+
+/* Laptop screens (992px to 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .mission-page {
+    padding: 1.5rem 0;
+  }
+  
+  .mission-container,
+  .vision-container,
+  .duties-container,
+  .messages-container,
+  .message-desk {
+    width: min(96%, 1000px);
+  }
+  
+  .message-content {
     flex-direction: row;
     align-items: flex-start;
     gap: 1.5rem;
   }
   
-  .MsgPera {
-    flex: 1;
+  .message-text {
+    flex: 2;
   }
   
-  .IName {
-    flex-shrink: 0;
+  .message-profile {
+    flex: 0 0 130px;
+  }
+  
+  .profile-image {
+    width: 110px;
+    height: 130px;
+  }
+  
+  .message-text p {
+    text-align: left;
   }
 }
 
-/* Medium screens (768px to 991px) */
+/* Tablet screens (768px to 991px) */
 @media (max-width: 991px) and (min-width: 768px) {
-  .MessageDesk,
-  .Mission-Container,
-  .Vission-Container,
-  .msg-con,
-  .DContainer,
-  .footer-container {
-    width: 95%;
+  .mission-page {
+    padding: 1.2rem 0;
   }
   
-  .Msg {
+  .mission-container,
+  .vision-container,
+  .duties-container,
+  .messages-container,
+  .message-desk {
+    width: min(97%, 900px);
+  }
+  
+  .message-content {
     flex-direction: column;
-    text-align: center;
-    gap: 1rem;
-  }
-  
-  .MsgPera {
-    text-align: center;
-  }
-  
-  .footer-container {
-    flex-direction: column;
+    align-items: center;
     gap: 1.5rem;
   }
   
-  .contact-info,
-  .quick-links {
+  .message-text {
     width: 100%;
+  }
+  
+  .message-text p {
     text-align: center;
   }
   
-  .info-item {
-    justify-content: center;
+  .profile-image {
+    width: 120px;
+    height: 140px;
   }
   
-  .social-icons {
-    justify-content: center;
+  .duties-content ul {
+    text-align: center;
+  }
+  
+  .duties-content li {
+    text-align: left;
+    padding-left: 1.5rem;
   }
 }
 
-/* Small screens (576px to 767px) */
+/* Large mobile screens (576px to 767px) */
 @media (max-width: 767px) and (min-width: 576px) {
-  .mission-Page {
-    padding-top: 1rem;
+  .mission-page {
+    padding: 1rem 0;
   }
   
-  .MessageDesk,
-  .Mission-Container,
-  .Vission-Container,
-  .msg-con,
-  .DContainer,
-  .footer-container {
-    width: 98%;
-  }
-  
-  .Msg {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  .MsgPera {
-    text-align: center;
-    line-height: 1.5;
-  }
-  
-  .DutyDescription p {
-    text-align: center;
-  }
-  
-  .footer-container {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  .contact-info,
-  .quick-links {
-    width: 100%;
-    text-align: center;
-    padding: 0;
-  }
-}
-
-/* Extra small screens (up to 575px) */
-@media (max-width: 575px) {
-  .mission-Page {
-    padding-top: 0.5rem;
-  }
-  
-  .MessageDesk,
-  .Mission-Container,
-  .Vission-Container,
-  .msg-con,
-  .DContainer,
-  .footer-container {
-    width: 100%;
+  .mission-container,
+  .vision-container,
+  .duties-container,
+  .messages-container,
+  .message-desk {
+    width: min(98%, 100%);
     margin-left: auto;
     margin-right: auto;
   }
   
-  .Mission-Container,
-  .Vission-Container,
-  .msg-P-desk,
-  .Msg-R-desk,
-  .Msg-PC-desk,
-  .DContainer {
-    margin: 1rem auto;
-    border-radius: 0.4rem;
+  .mission-container,
+  .vision-container,
+  .duties-container,
+  .message-card {
+    padding: clamp(1.2rem, 4vw, 1.8rem);
+    border-radius: 0.8rem;
   }
   
-  .msg-con {
-    gap: 1rem;
-    padding: 0 0.5rem;
-  }
-  
-  .Msg {
+  .message-content {
     flex-direction: column;
     align-items: center;
-    gap: 0.8rem;
+    gap: 1.2rem;
   }
   
-  .MsgPera {
+  .message-text p {
     text-align: center;
-    line-height: 1.4;
+    font-size: clamp(0.9rem, 3vw, 1rem);
   }
   
-  .DutyDescription p {
+  .profile-image {
+    width: 100px;
+    height: 120px;
+  }
+  
+  .duties-content li {
+    padding-left: 1.2rem;
     text-align: left;
-    padding: 0 0.5rem;
   }
   
-  .footer-container {
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem 0.5rem;
-  }
-  
-  .contact-info,
-  .quick-links {
-    width: 100%;
-    text-align: center;
-    padding: 0;
-  }
-  
-  .info-item {
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.3rem;
-  }
-  
-  .social-icons {
-    justify-content: center;
-    gap: 1rem;
+  .section-title h2::after,
+  .section-title h3::after {
+    width: 40px;
   }
 }
 
-/* Ultra small screens (up to 320px) */
-@media (max-width: 320px) {
-  .mission-Page {
-    padding: 0.2rem;
+/* Small mobile screens (375px to 575px) */
+@media (max-width: 575px) and (min-width: 375px) {
+  .mission-page {
+    padding: 0.8rem 0;
   }
   
-  .Mission-Container,
-  .Vission-Container,
-  .msg-P-desk,
-  .Msg-R-desk,
-  .Msg-PC-desk,
-  .DContainer {
+  .mission-container,
+  .vision-container,
+  .duties-container,
+  .messages-container,
+  .message-desk {
+    width: 100%;
+    margin: clamp(1rem, 3vw, 1.5rem) clamp(0.5rem, 2vw, 1rem);
+  }
+  
+  .mission-container,
+  .vision-container,
+  .duties-container,
+  .message-card {
+    padding: clamp(1rem, 4vw, 1.5rem);
+    border-radius: 0.6rem;
+  }
+  
+  .message-desk {
+    padding: clamp(0.8rem, 3vw, 1.2rem);
+    border-radius: 0.6rem;
+  }
+  
+  .messages-container {
+    gap: clamp(1.2rem, 3vw, 1.8rem);
+    padding: 0 clamp(0.5rem, 2vw, 0.8rem);
+  }
+  
+  .message-content {
+    gap: 1rem;
+  }
+  
+  .message-text p {
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  .profile-image {
+    width: 90px;
+    height: 110px;
+    border-radius: 0.6rem;
+  }
+  
+  .duties-content li {
+    padding-left: 1rem;
+    margin: 0.6rem 0;
+  }
+  
+  .section-title h2::after,
+  .section-title h3::after {
+    width: 30px;
+    height: 2px;
+  }
+}
+
+/* Extra small mobile screens (320px to 374px) */
+@media (max-width: 374px) {
+  .mission-page {
+    padding: 0.5rem 0;
+  }
+  
+  .mission-container,
+  .vision-container,
+  .duties-container,
+  .messages-container,
+  .message-desk {
+    width: 100%;
+    margin: 0.8rem 0.3rem;
+  }
+  
+  .mission-container,
+  .vision-container,
+  .duties-container,
+  .message-card {
     padding: 0.8rem;
-    margin: 0.8rem auto;
+    border-radius: 0.5rem;
   }
   
-  .msg-con {
-    gap: 0.8rem;
-    padding: 0 0.2rem;
-  }
-  
-  .DutyDescription p {
-    padding: 0 0.2rem;
-    font-size: 0.9rem;
-    line-height: 1.4;
-  }
-  
-  .MessageDesk {
+  .message-desk {
     padding: 0.6rem;
+    border-radius: 0.5rem;
+  }
+  
+  .messages-container {
+    gap: 1rem;
+    padding: 0 0.3rem;
+  }
+  
+  .message-content {
+    gap: 0.8rem;
+  }
+  
+  .message-text p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  .profile-image {
+    width: 80px;
+    height: 100px;
+    border-radius: 0.5rem;
+  }
+  
+  .profile-name {
+    font-size: 0.9rem;
+  }
+  
+  .duties-content li {
+    font-size: 0.9rem;
+    padding-left: 0.8rem;
+    margin: 0.5rem 0;
+    line-height: 1.6;
+  }
+  
+  .duties-content li::before {
+    font-size: 1em;
+  }
+  
+  .section-title h2::after,
+  .section-title h3::after {
+    width: 25px;
+    height: 2px;
   }
 }
 
 /* Landscape orientation adjustments */
 @media (orientation: landscape) and (max-height: 600px) {
-  .Mission-Container,
-  .Vission-Container,
-  .msg-P-desk,
-  .Msg-R-desk,
-  .Msg-PC-desk,
-  .DContainer {
-    padding: 1rem;
-    margin: 1rem auto;
+  .mission-page {
+    padding: 0.5rem 0;
   }
   
-  .msg-con {
+  .mission-container,
+  .vision-container,
+  .duties-container,
+  .message-card {
+    padding: 1rem;
+    margin: 0.8rem auto;
+  }
+  
+  .message-desk {
+    padding: 0.8rem;
+    margin: 1rem auto 0.5rem;
+  }
+  
+  .messages-container {
     gap: 1rem;
   }
   
-  .Titel h2,
-  .DTitle {
-    font-size: clamp(1.5rem, 3vw, 2rem);
+  .section-title h2,
+  .section-title h3 {
+    font-size: clamp(1.4rem, 3vw, 2rem);
     margin-bottom: 0.8rem;
+  }
+  
+  .message-desk h2 {
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
+  }
+  
+  .profile-image {
+    width: 80px;
+    height: 100px;
+  }
+}
+
+/* Zoom level adjustments for 125% and 150% scaling */
+@media (min-resolution: 1.25dppx) and (max-resolution: 1.49dppx) {
+  .mission-page {
+    transform: scale(0.95);
+    transform-origin: top center;
+  }
+  
+  .mission-container,
+  .vision-container,
+  .duties-container,
+  .message-card {
+    padding: clamp(1.2rem, 3vw, 2rem);
+  }
+  
+  .section-title h2,
+  .section-title h3 {
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+  }
+  
+  .message-text p {
+    font-size: clamp(0.9rem, 2.2vw, 1rem);
+  }
+}
+
+@media (min-resolution: 1.5dppx) {
+  .mission-page {
+    transform: scale(0.9);
+    transform-origin: top center;
+  }
+  
+  .mission-container,
+  .vision-container,
+  .duties-container,
+  .message-card {
+    padding: clamp(1rem, 2.5vw, 1.8rem);
+  }
+  
+  .section-title h2,
+  .section-title h3 {
+    font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+  }
+  
+  .message-text p {
+    font-size: clamp(0.85rem, 2vw, 0.95rem);
+  }
+  
+  .profile-image {
+    width: clamp(80px, 15vw, 120px);
+    height: clamp(100px, 18vw, 140px);
   }
 }
 
 /* High contrast mode support */
 @media (prefers-contrast: high) {
-  .Mission-Container,
-  .Vission-Container,
-  .msg-P-desk,
-  .Msg-R-desk,
-  .Msg-PC-desk,
-  .DContainer {
+  .mission-container,
+  .vision-container,
+  .duties-container,
+  .message-card {
     border: 2px solid #004b91;
+    background: #ffffff;
   }
   
-  .MessageDesk {
-    border: 2px solid #fff;
+  .message-desk {
+    border: 2px solid #ffffff;
+    background: #004b91;
+  }
+  
+  .section-title h2,
+  .section-title h3,
+  .profile-name {
+    color: #000080;
+  }
+  
+  .message-text p,
+  .duties-content li {
+    color: #000000;
   }
 }
 
-/* Reduced motion support */
+/* Reduced motion preferences */
 @media (prefers-reduced-motion: reduce) {
-  .social-icon {
+  .message-card {
     transition: none;
   }
   
-  .quick-links a {
+  .profile-image {
     transition: none;
+  }
+  
+  .message-desk::before {
+    animation: none;
   }
 }
 
 /* Print styles */
 @media print {
-  .mission-Page {
-    margin-top: 0;
-    padding-top: 0;
+  .mission-page {
+    background: white;
+    padding: 0;
   }
   
-  .MessageDesk,
-  .Mission-Container,
-  .Vission-Container,
-  .msg-P-desk,
-  .Msg-R-desk,
-  .Msg-PC-desk,
-  .DContainer {
+  .mission-container,
+  .vision-container,
+  .duties-container,
+  .message-card,
+  .message-desk {
     box-shadow: none;
     border: 1px solid #ccc;
+    background: white;
+    page-break-inside: avoid;
+    margin: 1rem 0;
   }
   
-  .social-icons {
+  .message-desk {
+    background: #f0f0f0 !important;
+    color: black !important;
+  }
+  
+  .section-title h2,
+  .section-title h3,
+  .profile-name {
+    color: black;
+  }
+  
+  .message-desk::before {
     display: none;
   }
-}
-
-/* Zoom compatibility */
-@media (min-resolution: 1.5dppx) {
-  .Mission-Container,
-  .Vission-Container,
-  .msg-P-desk,
-  .Msg-R-desk,
-  .Msg-PC-desk,
-  .DContainer {
-    transform: translateZ(0);
-    will-change: transform;
-  }
-}/* Mission Page Styling */
-/*.mission-Page {
-  font-family: Arial, sans-serif;
-  position: relative;
-  margin-top: 10px; *//* Ensures it does not overlap with Home Page */
-  /*margin-bottom: -400px;
-}
-.MessageDesk {
-  background-color: #004b91;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  padding: 15px;
-  border-radius: 5px;
-  width: 71%;
-  margin-left: 14.5%;
-  margin-bottom: 1%;
-}*/
-/* Mission and Vision Containers */
-/*.Mission-Container {
-  background-color: #f2f2f2;
-  padding: 0.59rem;
-  border-radius: 10px;
-  text-align: center;
-  margin: 30px auto;
-  width: 71%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
- }
-.Vission-Container {
-  background-color: #f2f2f2;
-  padding: 2rem;
-  border-radius: 10px;
-  text-align: center;
-  margin: 30px auto;
-  width: 71%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.Titel h2 {
-  font-size: 40px;
-  font-weight: bold;
-  color: #004b91;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.Missio-writeup p {
-  font-size: 25px;
-  color: #333;
-  line-height: 1.6;
-}
-.Vission-writeup p {
-  font-size: 25px;
-  color: #333;
-  line-height: 1.6;
-} */
-
-/* Messages Sections */
-/* .msg-con {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 10%;
-  width: 72%;
-  margin: auto;
-  margin-left: 14%;
-}
-.msg-con p {
-  text-align: justify;
-  padding-left: 20rem;
-}
-.IName{
-  display: inline-block;
-  margin-right: 50rem;
-  margin-top:-6rem;
-}
-.Name{
-  padding: 0.5rem;
-} */
-/*
-.msg-P-desk {
-  background-color: #f2f2f2;
-  padding: 1.5rem;
-  border-radius: 10px;
-  text-align: center;
-  width: 80rem; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.Msg-R-desk {
-  margin-top: 1rem;
-  background-color: #f2f2f2;
-  padding: 1.5rem;
-  border-radius: 10px;
-  text-align: center;
-  width: 80rem; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.Msg-PC-desk {
-  margin-top: 1rem;
-  background-color: #f2f2f2;
-  padding: 1.5rem;
-  border-radius: 10px;
-  text-align: center;
-  width: 80rem; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.MsgPera {
-  font-size: 15px;
-  text-align: justify;
-}
-.Name {
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 10px;
-}
-*/
-/* Images inside message sections 
-.Provost {
-  width: 120px;
-  height: 140px;
-  border-radius: 10px;
-  object-fit: cover;
-  border: 2px solid #004b91;
-}
-.RD {
-  width: 120px;
-  height: 140px;
-  margin-top: 5px;
-  border-radius: 10px;
-  object-fit: cover;
-  border: 2px solid #004b91;
-}
-.PCD {
-  width: 120px;
-  height: 140px;
-  border-radius: 10px;
-  object-fit: cover;
-  border: 2px solid #004b91;
-}
-.Name {
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-.DContainer {
-  background-color: #f2f2f2;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  margin: 30px auto 30%;
-  margin-left: 11.5rem; 
-  width: 75.5%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-@media (max-width: 768px) {
-  .DContainer {
-    margin-bottom: 120px; 
+  
+  .profile-image {
+    border: 1px solid #ccc;
   }
 }
 
-.Name {
-  font-size: 1.5em;
-}
-.DTitle {
-  font-size: 40px;
-  font-weight: bold;
-  color: #004b91;
-  text-align: center;
-}
-.DutyDescription p {
-  font-size: 25px;
-  text-align: justify;
-}
-.footer-container {
-  background-color: white;
-  padding: 10px;
-  border-radius: 10px;
-  display: flex;
-  text-align: center;
-  width: 73%;
-  margin-bottom: -200px;
-}
-.contact-info,
-.quick-links {
-  text-align: start;
-  color: #007bff;
-  width: 50%;
-}
-.info-item {
-  display: flex;
-  align-items: start;
-  margin: 10px 0;
-}
-.icon {
-  padding-top: 12px;
-  font-size: 1.9em;
-  color: #007bff;
-  margin-right: 10px;
-}
-.social-icons {
-  display: flex;
-  gap: 10px;
-  margin-top: 10px;
+/* Touch device optimizations */
+@media (pointer: coarse) {
+  .message-card {
+    padding: clamp(1.2rem, 4vw, 2rem);
+  }
+  
+  .profile-image {
+    border-width: 2px;
+  }
+  
+  .duties-content li {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+  }
 }
 
-.social-icon {
-  font-size: 1.5em;
-  color: #007bff;
-  cursor: pointer;
+/* Accessibility improvements */
+@media (prefers-reduced-motion: no-preference) {
+  .message-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .profile-image {
+    transition: transform 0.2s ease;
+  }
 }
 
-.quick-links ul {
-  list-style: none;
-  padding: 0;
+/* Focus visible improvements */
+.message-card:focus-visible,
+.profile-image:focus-visible {
+  outline: 3px solid #004b91;
+  outline-offset: 2px;
 }
 
-.quick-links li {
-  margin: 10px 0;
-}
-
-.quick-links a {
-  text-decoration: none;
-  color: #007bff;
-  font-weight: bold;
-}
-  */
-/* responsive
-@media (max-width: 768px) {
-  * {
-    font-size: 12px;
-  }
-  .Msg {
-    flex-direction: column;
-    text-align: center;
-  }
-  @media (max-width: 768px) {
-    .msg-con {
-      flex-direction: column;
-      align-items: center;
-      gap: 20px; 
-    }
-
-    .msg-P-desk,
-    .Msg-R-desk,
-    .Msg-PC-desk {
-      width: 90%; 
-    }
+/* Ensure minimum touch targets */
+@media (max-width: 767px) {
+  .profile-image {
+    min-width: 44px;
+    min-height: 44px;
   }
 }
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .contact-info,
-  .quick-links {
-    width: 100%;
-    margin-bottom: 20px; 
-  }
-
-  .info-item {
-    justify-content: center;
-  }
-
-  .social-icons {
-    justify-content: center;
-  }
-}
-@media (max-width: 480px) {
-  h2 {
-    font-size: 1.2em;
-  }
-  p {
-    font-size: 0.9em;
-  }
-  .icon,
-  .social-icon {
-    font-size: 1.2em;
-  }
-}
-@media (max-width: 1440px) {
-  .msg-P-desk {
-    padding-bottom: 3.2%;
-  }
-  .Msg-R-desk {
-    padding-bottom: 4.1%;
-  }
-}
-@media (max-width: 1024px) {
-  .msg-con {
-    flex-direction: column;
-    align-items: center;
-  }
-  .msg-P-desk,
-  .Msg-R-desk,
-  .Msg-PC-desk {
-    width: 80%;
-    margin: 3%;
-  }
-  .DContainer {
-    width: 70%;
-    margin-bottom: 10%;
-  }
-  .mission-Page {
-    margin-bottom: 0px;
-  }
-}
-@media (max-width: 768px) {
-  .mission-Page {
-    margin-bottom: 0px;
-  }
-}
- */

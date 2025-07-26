@@ -32,116 +32,121 @@ function Home() {
           className="background-slideshow"
           style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
         ></div>
+        <div className="overlay"></div>
         <div className="content">
-          <h1>Welcome to <span className="highlight">CHARUSAT NSS</span> </h1>
+          <h1>Welcome to <span className="highlight">CHARUSAT NSS</span></h1>
           <p>The National Service Scheme (NSS) is a Central Sector Scheme of Government of India, Ministry of Youth Affairs & Sports. It provides an opportunity to students to take part in various community service activities & programmes.</p>
         </div>
       </div>
       
-      <div className="mission-Page">
-        <div className="Mission-Container">
-          <div className="Titel">
+      <div className="mission-page">
+        <div className="mission-container">
+          <div className="section-title">
             <h2>Mission</h2>
           </div>
-          <div className="Missio-writeup">
+          <div className="mission-content">
             <p>
-              To Develop socially responsible , service-oriented individuals who
-              contribute to nation-building through leadership , ethics ,
-              service , and community Engagement.
+              To Develop socially responsible, service-oriented individuals who
+              contribute to nation-building through leadership, ethics,
+              service, and community Engagement.
             </p>
           </div>
         </div>
-        <div className="Vission-Container">
-          <div className="Titel">
+
+        <div className="vision-container">
+          <div className="section-title">
             <h2>Vision</h2>
           </div>
-          <div className="Vission-writeup">
+          <div className="vision-content">
             <p>
               To inspire selfless service, leadership and teamwork through
-              Collaboration and community development,Upholding the NSS
-              motto,"Not Me, But You."
+              Collaboration and community development, Upholding the NSS
+              motto, "Not Me, But You."
             </p>
           </div>
         </div>
-        <header className="MessageDesk"><center>Message from desk</center></header>
-        <div className="msg-con">
-        <br></br>
-        
-          <div className="msg-P-desk">
-            <div className="Titel">
-              <h2>Provost</h2>
+
+        <header className="message-desk">
+          <h2>Message from Desk</h2>
+        </header>
+
+        <div className="messages-container">
+          <div className="message-card">
+            <div className="section-title">
+              <h3>Provost</h3>
             </div>
-            <div className="Msg">
-              <p className="MsgPera">
-                Education is not just about Knowledge, it's about responsibility.
-                The NSS unit at CHARUSAT fosters a culture of service,
-                leadership, and community Engagement, shaping our students into
-                responsible citizens. We take immense pride in the efforts of
-                our NSS volunteers, Who selflessly work towards creating a better
-                society.
-              </p>
-              <div className="IName">
-                <img src={image4} alt="Provost image" className="Provost" />
-                <h4 className="Name">........</h4>
+            <div className="message-content">
+              <div className="message-text">
+                <p>
+                  Education is not just about Knowledge, it's about responsibility.
+                  The NSS unit at CHARUSAT fosters a culture of service,
+                  leadership, and community Engagement, shaping our students into
+                  responsible citizens. We take immense pride in the efforts of
+                  our NSS volunteers, Who selflessly work towards creating a better
+                  society.
+                </p>
+              </div>
+              <div className="message-profile">
+                <img src={image4} alt="Provost" className="profile-image" />
+                <h4 className="profile-name">........</h4>
               </div>
             </div>
           </div>
-          <div className="Msg-R-desk">
-            <div className="Titel">
-              <h2>Registrar </h2>
+
+          <div className="message-card">
+            <div className="section-title">
+              <h3>Registrar</h3>
             </div>
-            <div className="Msg">
-              <p className="MsgPera">
-                The NSS Unit is an integral part of CHARUSAT's commitment to
-                holistic education. Through this platform, our students learn the
-                true essence of service, empathy, and leadership. I encourage all
-                volunteers to continue their efforts in making a positive
-                impact.
-              </p>
-              <div className="IName">
-                <center><img src={image3} alt="Registrar image" className="RD" /></center>
-                <center><h4 className="Name">Dr Atul Patel</h4></center>
+            <div className="message-content">
+              <div className="message-text">
+                <p>
+                  The NSS Unit is an integral part of CHARUSAT's commitment to
+                  holistic education. Through this platform, our students learn the
+                  true essence of service, empathy, and leadership. I encourage all
+                  volunteers to continue their efforts in making a positive
+                  impact.
+                </p>
+              </div>
+              <div className="message-profile">
+                <img src={image3} alt="Registrar" className="profile-image" />
+                <h4 className="profile-name">Dr Atul Patel</h4>
               </div>
             </div>
           </div>
-         
-          <div className="Msg-PC-desk">
-            <div className="Titel">
-              <h2>Program Coordinator</h2>
+
+          <div className="message-card">
+            <div className="section-title">
+              <h3>Program Coordinator</h3>
             </div>
-            <div className="Msg">
-              <p className="MsgPera">
-                At CHARUSAT, the National Service Scheme (NSS) Cell plays a
-                pivotal role in shaping responsible, active, and socially aware
-                citizens. It encourages students to engage in community
-                service, fostering the values of selflessness, compassion, and
-                leadership.
-              </p>
-              <div className="IName">
-                <img src={image2} alt="PC image" className="PCD" />
-                <h4 className="Name">Kishan Patel</h4>
+            <div className="message-content">
+              <div className="message-text">
+                <p>
+                  At CHARUSAT, the National Service Scheme (NSS) Cell plays a
+                  pivotal role in shaping responsible, active, and socially aware
+                  citizens. It encourages students to engage in community
+                  service, fostering the values of selflessness, compassion, and
+                  leadership.
+                </p>
+              </div>
+              <div className="message-profile">
+                <img src={image2} alt="Program Coordinator" className="profile-image" />
+                <h4 className="profile-name">Kishan Patel</h4>
               </div>
             </div>
           </div>
         </div>
-       
-        <div className="DContainer">
-          <h2 className="DTitle">Duties of Volunteer</h2>
-          <div className="DutyDescription">
-            <p>
-             - To serve the community and uphold the values of NSS. 
-             <br></br>
-             - To participate actively in community development programs.
-             <br></br>
-             - To foster leadership,teamwork, and problem-solving skills. 
-             <br></br>
-             - To uphold ethical and moral esponsibilities in all activities. 
-             <br></br>
-             - To commit to social awareness and sustainable development.
-            <br></br>
-             - The NSS Unit at CHARUSAT was started in the year 2014. Since then,
-              it has been a vibrant and active unit.
-            </p>
+
+        <div className="duties-container">
+          <h2 className="section-title">Duties of Volunteer</h2>
+          <div className="duties-content">
+            <ul>
+              <li>To serve the community and uphold the values of NSS.</li>
+              <li>To participate actively in community development programs.</li>
+              <li>To foster leadership, teamwork, and problem-solving skills.</li>
+              <li>To uphold ethical and moral responsibilities in all activities.</li>
+              <li>To commit to social awareness and sustainable development.</li>
+              <li>The NSS Unit at CHARUSAT was started in the year 2014. Since then, it has been a vibrant and active unit.</li>
+            </ul>
           </div>
         </div>
       </div>
